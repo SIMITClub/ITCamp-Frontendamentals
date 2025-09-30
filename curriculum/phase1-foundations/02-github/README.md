@@ -131,6 +131,8 @@ git pull origin main
   - Each member adds their name to the README via their own branch.  
   - Open pull requests and merge them into `main`.  
 
+> For more details please check `exercises` folder.
+
 ## 📝 Bonus Resources
 
 * [Official Git Documentation](https://git-scm.com/doc)  
