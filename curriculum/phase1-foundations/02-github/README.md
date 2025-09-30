@@ -114,7 +114,7 @@ git pull origin main
 ## 🧪 Exercises
 
 1. 🏁 Starter Exercise: **GitHub → Local**  
-  - Fork the ITC curriculum repository and clone it to your local machine.  
+  - Fork the [ITC curriculum repository](https://github.com/SIMITClub/ITCamp-Frontendamentals) and clone it to your local machine.  
   - Add a `hello.txt` file, commit, and push using VS Code Source Control.  
 
 2. 🔧 Practice Exercise: **Branching**  
