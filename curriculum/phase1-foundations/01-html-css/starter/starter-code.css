@@ -1,0 +1,122 @@
+
+I'll create a starter code version for your bootcamp exercise! This will have the HTML structure complete but with minimal CSS for students to practice with.
+
+Link Page Starter HTML
+Code 
+Perfect! I've created starter code for your bootcamp exercise with two files:
+
+📄 HTML File - Complete and ready to use
+
+All structure in place
+Changed image source to generic "profile.jpg"
+Students just need to update their name and links
+🎨 CSS File - Exercise template with:
+
+Reset styles already provided (so students can focus on learning)
+Clear TODO comments for each styling task
+Numbered sections that build upon each other
+Organized from basic to advanced concepts
+Bonus hover effect challenge at the end
+How to use this:
+
+Students create both files in their project folder
+They add a profile image named "profile.jpg"
+They complete each TODO section in the CSS
+They can compare their work to your finished version
+This gives them hands-on practice with:
+
+Box model (padding, margin, border)
+Basic styling (colors, fonts, backgrounds)
+Positioning (display, text-align, centering)
+Pseudo-classes (hover effects)
+The structure makes it easy to teach progressively or let students work independently! 🚀
+
+
+
+
+
+/* ===== CSS BASICS EXERCISE ===== */
+
+/* RESET STYLES - Already provided */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== YOUR TASK: Complete the CSS below ===== */
+
+/* 1. PAGE STYLES */
+.page {
+    /* TODO: Add background color (#6366f1) */
+    /* TODO: Add padding (20px) */
+}
+
+/* 2. PROFILE SECTION STYLES */
+.profile-section {
+    /* TODO: Set text color to white */
+    /* TODO: Set font-family to Arial, sans-serif */
+    /* TODO: Add padding (30px) */
+    /* TODO: Add bottom margin (20px) */
+}
+
+/* 3. PROFILE PICTURE STYLES */
+.profile-picture {
+    /* TODO: Set width to 120px */
+    /* TODO: Set height to 120px */
+    /* TODO: Add white border (3px solid) */
+    /* TODO: Make it circular with border-radius (60px) */
+    /* TODO: Center it using display: block and margin auto */
+}
+
+/* 4. PROFILE TITLE STYLES */
+.profile-title {
+    /* TODO: Set font-size to 28px */
+    /* TODO: Make text bold */
+    /* TODO: Add top margin (15px) */
+    /* TODO: Add bottom margin (5px) */
+    /* TODO: Center the text */
+}
+
+/* 5. PROFILE DESCRIPTION STYLES */
+.profile-description {
+    /* TODO: Set font-size to 16px */
+    /* TODO: Center the text */
+}
+
+/* 6. LINKS SECTION STYLES */
+.links-section {
+    /* TODO: Add horizontal padding (0 20px) */
+    /* TODO: Set max-width to 400px */
+    /* TODO: Center the container using margin auto */
+}
+
+/* 7. LINK ITEM STYLES */
+.link-item {
+    /* TODO: Set background-color to white */
+    /* TODO: Set text color to #333333 */
+    /* TODO: Add padding (15px) */
+    /* TODO: Add vertical margin (10px 0) */
+    /* TODO: Add border (2px solid #dddddd) */
+    /* TODO: Add border-radius (8px) */
+    /* TODO: Set display to block */
+    /* TODO: Remove text underline */
+    /* TODO: Center the text */
+    /* TODO: Set font-size to 16px */
+}
+
+/* 8. FOOTER SECTION STYLES */
+.footer-section {
+    /* TODO: Set text color to white */
+    /* TODO: Set font-size to 14px */
+    /* TODO: Center the text */
+    /* TODO: Add top margin (40px) */
+    /* TODO: Add padding (20px) */
+}
+
+/* 9. BONUS CHALLENGE: Add hover effect */
+.link-item:hover {
+    /* TODO: Change background on hover (#f3f4f6) */
+    /* TODO: Add subtle lift effect (transform: translateY(-2px)) */
+    /* TODO: Add smooth transition (all 0.3s ease) */
+}
