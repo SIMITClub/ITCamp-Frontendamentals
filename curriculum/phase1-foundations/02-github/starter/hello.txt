@@ -1,9 +1,1 @@
-I am in Singapore
-I love merlion
-Welcome to ITCamp!!!
-Hello, my name is Vicky!!!
-Moe is very cool!!!
-hello world
-I love coding
-This is Hello
-I hate Merlion
+This is main
