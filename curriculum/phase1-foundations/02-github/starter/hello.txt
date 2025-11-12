@@ -1,5 +1,1 @@
-Welcome to ITCamp!!!
-Hello, my name is Vicky!!!
-Moe is very cool!!!
-hello world
-hoohaa
+This is Moe
