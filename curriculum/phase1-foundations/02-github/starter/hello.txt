@@ -4,3 +4,4 @@ Moe is very cool!!!
 hello world
 I love coding
 This is Hello
+I hate Merlion
