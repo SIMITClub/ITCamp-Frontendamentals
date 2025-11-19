@@ -12,7 +12,14 @@ Practice resolving a merge conflict.
    Welcome to ITCamp!!!
    ```
 
-2. Merge your new branch you made on Exercise 2 into your current(main) branch:
+2. Stage and commit the file:
+
+   ```bash
+   git add .
+   git commit -m "Changed hello.txt"
+   ```
+   
+3. Merge your new branch you made on Exercise 2 into your current(main) branch:
 
    ```bash
    git merge <your-branch-name> 
@@ -20,7 +27,7 @@ Practice resolving a merge conflict.
 
    > This will create a **merge conflict**, since both your main branch and your new branch edited the same file `hello.txt` differently.
    
-3. Resolve the merge conflict. Edit the file so that both changes are kept:
+4. Resolve the merge conflict. Edit the file so that both changes are kept:
 
    ```bash
    Welcome to ITCamp!!!
@@ -28,14 +35,14 @@ Practice resolving a merge conflict.
    I love <something you love>
    ```
 
-4. Stage and commit the resolved file:
+5. Stage and commit the resolved file:
 
    ```bash
-   git add hello.txt
+   git add .
    git commit -m "Resolve merge conflict in hello.txt"
    ```
 
-5. Push the updated branch to your GitHub fork:
+6. Push the updated branch to your GitHub fork:
 
    ```bash
    git push origin main
