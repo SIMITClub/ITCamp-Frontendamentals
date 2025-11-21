@@ -1,2 +1,1 @@
-This is main
-This is Moe
+Hello, my name is Moe
