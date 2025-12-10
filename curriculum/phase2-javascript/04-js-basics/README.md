@@ -1125,6 +1125,7 @@ git push origin main
 ## 📝 Bonus Resources
 
 <!-- TODO: Edit or change this, can add youtube link if applicable -->
+* [MDN Docs](https://developer.mozilla.org/)
 * [W3Schools - Javascript Tutorial](https://www.w3schools.com/js)
 
 
@@ -1132,5 +1133,4 @@ git push origin main
 <!-- TODO: Update this, add your name, edit the role and github username and links -->
 | Name         | Role                | GitHub                                             |
 | ------------ | ------------------- | -------------------------------------------------- |
-| Reynaldi     | Speaker 1 | [@reynaldi-goh](https://github.com/reynaldi-goh)       |
-| Michelle     | Speaker 2 | [@Chelle007](https://github.com/Chelle007)             |
+| Reynaldi     | Speaker   | [@reynaldi-goh](https://github.com/reynaldi-goh)       |
