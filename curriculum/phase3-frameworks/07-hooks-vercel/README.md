@@ -101,33 +101,15 @@ useEffect(() => {
 
 ### 🏁 Exercise 1: Dynamic User Cards
 * **Goal:** Stop copy-pasting code! Refactor the hardcoded `UserCard` component to be reusable.
-* **Task:**
-    1.  Modify `UserCard` to accept `name` and `role` as props.
-    2.  In `App.js`, render **3 distinct users** (e.g., Teacher, Student, Developer) reusing that single component.
 
 ### 🔧 Exercise 2: The Interactive Counter (State & Events)
 * **Goal:** Build a counter that actually remembers its value.
-* **Task:**
-    1.  Create a `count` state using `useState`.
-    2.  Add a `+1` button that updates the state.
-    3.  **Challenge:** Create a separate `ResetButton` component. Pass a **callback function** down to it so that clicking it resets the parent's count to 0.
 
 ### 🚀 Exercise 3: The Notes App (Final Build)
-* **Step 1 (State):** Create two pieces of state:
-    * `notes`: An array to store the list of notes (Start with `[]`).
-    * `input`: A string to store what the user is currently typing.
-* **Step 2 (Render):** Use `.map()` to display the `notes` array as a list of UI elements.
-* **Step 3 (Persistence):** Use `useEffect` to save the notes to `localStorage` whenever the `notes` array changes.
-    * *Hint:* Use `JSON.stringify()` when saving and `JSON.parse()` when loading.
+* **Goal:** Build a notes app that can add notes and persist them to localStorage.
 
 ### 🌍 Exercise 4: Deployment
 * **Goal:** Publish your app to the live web.
-* **Steps:**
-  1.  Commit and Push your latest code to GitHub 🐙.
-  2.  Go to **Vercel** → **Add New Project**.
-  3.  Import your specific repository.
-  4.  Click **Deploy** and wait for the magic ✨.
-  5.  Paste your live link in the chat!
   
 ## 🛠️ Pushing Your Work
 
