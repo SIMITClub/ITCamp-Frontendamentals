@@ -1,7 +1,6 @@
-# 🧠 01 - Workshop Title Here
+# 🧠 07 - React Hooks & Deployment
 
-<!-- TODO: Update this -->
-> TLDR; A quick overview of the topic and what students will learn in this session.
+> TLDR; A hands-on workshop mastering React fundamentals: Components, Props, Hooks (useState + useEffect), and Deployment with Vercel.
 
 ## 📚 Table of Contents
 
@@ -17,9 +16,11 @@
 ## 🔍 Topic Overview
 
 In this session, we'll cover:
-* Brief summary of the workshop topic.
-* Why this topic is important
-* Real-world examples.
+* **CSR vs. SSR:** Understanding when to use `"use client"` in Next.js.
+* **Components & Props:** The DRY principle (Don't Repeat Yourself) and passing data top-down.
+* **State Management:** Using `useState` to make apps interactive ("Memory").
+* **Side Effects:** Using `useEffect` for data persistence and browser interactions ("Senses").
+* **Deployment:** Taking your app live to the world using Vercel. 🌍
 
 ## 📦 Project Setup
 
@@ -33,51 +34,85 @@ Before we begin:
     * Navigate to the folder where you cloned your forked repo.
 
 3. **Pull the changes to your local machine**
-   <!-- TODO: Change this according to your lesson folder -->
    ```bash
     git checkout main
     git pull origin main
    ```
 
 4. **Navigate to the lesson folder**
-    <!-- TODO: Change this according to your lesson folder -->
     ```bash
-    cd curriculum/[lesson-phase]/[lesson-name]
+    cd curriculum/phase3-frameworks/07-hooks-vercel
     ```
 
-4. **Install dependencies (if any)**
-   <!-- TODO: Remove this section if no need -->
+5. **Install dependencies (if any)**
    ```bash
    npm install
    ```
 
-5. **Start the dev server (if applicable)**
-    <!-- TODO: Remove this section if no need -->
+6. **Start the dev server**
    ```bash
    npm run dev
    ```
 
 ## 📄 Code Walkthrough
 
-Use this section to explain important code blocks:
+We will refer to these patterns throughout the workshop.
 
-```tsx
-// Example code
-const HelloWorld = () => {
-  return <h1>Hello World 🌍</h1>;
-};
+### 1. Components & Props
+Instead of hardcoding HTML, we pass data into flexible components.
+```jsx
+// ❌ Bad (Hardcoded)
+<div className="card">Desmond - Teacher</div>
+
+// ✅ Good (Reusable)
+function UserCard({ name, role }) {
+  return <div className="card">{name} - {role}</div>;
+}
+// Usage: <UserCard name="Desmond" role="Teacher" />
+```
+
+### 2. useState
+Variables reset on refresh. State remembers data between renders.
+```jsx
+const [count, setCount] = useState(0);
+
+// ❌ Wrong: count = 5;
+// ✅ Correct: setCount(5);
+```
+
+### 3. Callback Function
+Data flows down. Functions flow down so children can change parent state.
+```jsx
+// Parent passes the "Key" (handleDelete) to the Child
+<DeleteButton onDelete={handleDelete} />
+```
+
+### 4. useEffect
+Run code after the screen updates (e.g., saving data, console log).
+```jsx
+useEffect(() => {
+  document.title = `Count: ${count}`;
+}, [count]); // Run whenever 'count' changes
 ```
 
 ## 🧪 Exercises
 
-<!-- TODO: Depends on you -->
-* 🏁 Starter Exercise: ...
-* 🔧 Modify This Component: ...
-* 🧠 Thought Question: ...
+> For more details please check `exercises` folder.
 
+### 🏁 Exercise 1: Dynamic User Cards
+* **Goal:** Stop copy-pasting code! Refactor the hardcoded `UserCard` component to be reusable.
+
+### 🔧 Exercise 2: The Interactive Counter (State & Events)
+* **Goal:** Build a counter that actually remembers its value.
+
+### 🚀 Exercise 3: The Notes App (Final Build)
+* **Goal:** Build a notes app that can add notes and persist them to localStorage.
+
+### 🌍 Exercise 4: Deployment
+* **Goal:** Publish your app to the live web.
+  
 ## 🛠️ Pushing Your Work
 
-<!-- TODO: If dont have updates, then remove this section (and the Table of Contents too) -->
 Once you're done with the exercises and your changes are complete, make sure to push your updates:
 ```bash
 git add .
@@ -85,39 +120,15 @@ git commit -m "Complete workshop exercises"
 git push origin main
 ```
 
-
 ## 📝 Bonus Resources
 
-<!-- TODO: Edit or change this, can add youtube link if applicable -->
-* [MDN Docs](https://developer.mozilla.org/)
-* [React Docs](https://react.dev/)
-* [Tailwind Docs](https://tailwindcss.com/)
+* [React Developer Tools (Chrome Extension)](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) - Allows you to inspect components and see State/Props changing in real-time.
+* [Lucide React Icons](https://lucide.dev/icons/) - The standard icon library for Next.js (perfect for your Delete/Edit buttons).
+* [React Cheatsheet](https://devhints.io/react) - Quick syntax reference for Hooks, Props, and Lifecycle.
 
 ## 🙌 Contributors
-<!-- TODO: Update this, add your name, edit the role and github username and links -->
 | Name         | Role                | GitHub                                             |
 | ------------ | ------------------- | -------------------------------------------------- |
-| Your Name    | Speaker 1 | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name    | Speaker 2 | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Activity Creator 1         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Activity Creator 2         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Reviewer 1         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Reviewer 2         | [@yourgithub](https://github.com/yourgithub)       |
-
-<!-- TODO: Delete this section when you are done-->
-## 📌 Heading Format Guide (for consistency)
-
-Use these emoji-based headers for every section:
-
-```md
-## 🧠 Title – For lesson title
-## 📚 Title – For table of contents
-## 🔍 Title – For explanation
-## 📦 Title – For tools or dependencies and setup
-
-## 📄 Title – For code breakdown
-## 🧪 Title – For exercises
-## 📝 Title – For documentation-related things
-
-## 🙌 Title – For contributors
-```
+| Desmond    | Speaker & Activity Creator 1 | [@desraymondz](https://github.com/desraymondz)       |
+| Michelle Chan    | Speaker & Activity Creator 2 | [@Chelle007](https://github.com/Chelle007)       |
+| Yan Mei | Reviewer         | [@yxnmei](https://github.com/yxnmei)       |
