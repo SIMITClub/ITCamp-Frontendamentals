@@ -97,8 +97,8 @@ git push origin main
 <!-- TODO: Update this, add your name, edit the role and github username and links -->
 | Name         | Role                | GitHub                                             |
 | ------------ | ------------------- | -------------------------------------------------- |
-| Your Name    | Speaker 1 | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name    | Speaker 2 | [@yourgithub](https://github.com/yourgithub)       |
+| Reynaldi    | Speaker 1 | [@yourgithub](https://github.com/yourgithub)       |
+| Winston    | Speaker 2 | [@yourgithub](https://github.com/yourgithub)       |
 | Your Name | Activity Creator 1         | [@yourgithub](https://github.com/yourgithub)       |
 | Your Name | Activity Creator 2         | [@yourgithub](https://github.com/yourgithub)       |
 | Your Name | Reviewer 1         | [@yourgithub](https://github.com/yourgithub)       |

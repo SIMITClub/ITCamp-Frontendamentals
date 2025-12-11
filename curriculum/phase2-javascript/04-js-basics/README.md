@@ -1,4 +1,4 @@
-# 🧠 01 - Javascript Basics
+# 🧠 04 - Javascript Basics
 
 <!-- TODO: Update this -->
 > TLDR; Learn JavaScript — the part that actually makes your website do stuff instead of just posing like a static brochure.
@@ -79,7 +79,7 @@ Before we begin:
 4. **Navigate to the lesson folder**
     <!-- TODO: Change this according to your lesson folder -->
     ```bash
-    cd curriculum/[lesson-phase]/[lesson-name]
+    cd curriculum/phase2-javascript/04-js-basics
     ```
 
 4. **Install dependencies (if any)**
@@ -94,7 +94,7 @@ Before we begin:
    npm run dev
    ```
 
-## 📄 Code Walkthrough
+## 📄 Code Walkthrough and 🔍 Explanation
 
 ### A. Printing
 
@@ -552,7 +552,7 @@ console.log(average([100, 200, 300]));       // 200
 
 Now it’s reusable, and you can call it anytime you need it — like your personal calculator bot.
 
-### ➡️ Quick Practice: Write a function that checks every number in the array whether it is even or odd. Then, check the data type.
+### 🧪 Quick Practice: Write a function that checks every number in the array whether it is even or odd. Then, check the data type.
 #### 1. In `script.js`, initialise array `numbers`
 ```js
 let numbers = [1, 4, 7, 10, 23, 88, 1001];
@@ -581,7 +581,7 @@ for (let i = 0; i < numbers.length; i++){
 }
 ```
 
-## Mini Project A - Mini Library
+## 🧪 Mini Project A - Mini Library
 
 Before starting, remove the code in `script.js`.
 ### Let's try to craft the product first!
@@ -823,7 +823,7 @@ document.body.addEventListener("click", function(e) {
 | CSS-style query (all)   | `querySelectorAll("selector")`       | NodeList       | Loop through all matching elements   |
 | React to user actions   | `addEventListener("event", handler)` | —              | Make your page interactive           |
 
-### ➡️ Quick Practice: Change text color when a button is clicked.
+### 🧪 Quick Practice: Change text color when a button is clicked.
 #### 1. Move the code from `script.js` to `libraries.js`
 #### 2. In `index.html`, attach an ID to heading 1 and the button
 ```html
@@ -867,7 +867,7 @@ button.addEventListener("click", function() {
     }
 });
 ```
-## Mini Project B - To-do List
+## 🧪 Mini Project B - To-do List
 ### Here is the starter code:
 ```html
 <!DOCTYPE html>
@@ -1132,27 +1132,5 @@ git push origin main
 <!-- TODO: Update this, add your name, edit the role and github username and links -->
 | Name         | Role                | GitHub                                             |
 | ------------ | ------------------- | -------------------------------------------------- |
-| Reynaldi     | Speaker 1 | [@yourgithub](https://github.com/yourgithub)       |
-| Michelle     | Speaker 2 | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Activity Creator 1         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Activity Creator 2         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Reviewer 1         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Reviewer 2         | [@yourgithub](https://github.com/yourgithub)       |
-
-<!-- TODO: Delete this section when you are done-->
-## 📌 Heading Format Guide (for consistency)
-
-Use these emoji-based headers for every section:
-
-```md
-## 🧠 Title – For lesson title
-## 📚 Title – For table of contents
-## 🔍 Title – For explanation
-## 📦 Title – For tools or dependencies and setup
-
-## 📄 Title – For code breakdown
-## 🧪 Title – For exercises
-## 📝 Title – For documentation-related things
-
-## 🙌 Title – For contributors
-```
+| Reynaldi     | Speaker 1 | [@reynaldi-goh](https://github.com/reynaldi-goh)       |
+| Michelle     | Speaker 2 | [@Chelle007](https://github.com/Chelle007)             |

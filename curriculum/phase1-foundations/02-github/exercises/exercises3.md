@@ -28,6 +28,7 @@ Practice resolving a merge conflict.
    > This will create a **merge conflict**, since both your main branch and your new branch edited the same file `hello.txt` differently.
    
 4. Resolve the merge conflict. Edit the file so that both changes are kept:
+4. Resolve the merge conflict. Edit the file so that both changes are kept:
 
    ```bash
    Welcome to ITCamp!!!
@@ -36,12 +37,14 @@ Practice resolving a merge conflict.
    ```
 
 5. Stage and commit the resolved file:
+5. Stage and commit the resolved file:
 
    ```bash
-   git add hello.txt
+   git add .
    git commit -m "Resolve merge conflict in hello.txt"
    ```
 
+6. Push the updated branch to your GitHub fork:
 6. Push the updated branch to your GitHub fork:
 
    ```bash
