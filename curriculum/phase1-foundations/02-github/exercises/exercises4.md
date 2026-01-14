@@ -40,6 +40,3 @@ Create a GitHub repository for your internal project and collaborate as a team.
 
 9. **Leader:** Submit the repository link to your mentor.  
    - The mentor will review to ensure everything is set up correctly.  
-
-## Reward
-The first team to finish will earn **1 extra lucky draw entry** for each member of the team.  

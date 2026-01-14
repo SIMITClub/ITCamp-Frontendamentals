@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Contact Book</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body class="bg-gray-100 min-h-screen py-10 px-4">
+        <div class="max-w-xl mx-auto">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">📇 Mini Contact Book</h1>
+
+            <!-- Add Contact Form -->
+            <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-lg font-semibold text-gray-700 mb-4">Add New Contact</h2>
+            <div class="flex gap-3 mb-3">
+                <input 
+                type="text" 
+                id="name-input" 
+                placeholder="Name"
+                class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                <input 
+                type="email" 
+                id="email-input" 
+                placeholder="Email"
+                class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+            <div class="mb-4">
+                <input 
+                type="tel" 
+                id="phone-input" 
+                placeholder="Phone (optional)"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+            </div>
+            <button 
+                id="add-btn"
+                class="w-full bg-blue-600 text-white py-3 rounded-md font-medium hover:bg-blue-700 transition-colors cursor-pointer"
+            >
+                Add Contact
+            </button>
+            </div>
+
+            <!-- Search -->
+            <div class="mb-6">
+            <input 
+                type="text" 
+                id="search-input" 
+                placeholder="🔍 Search contacts by name..."
+                class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            </div>
+
+            <!-- Contact List -->
+            <div id="contact-list">
+            <!-- Contacts rendered here -->
+            </div>
+        </div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

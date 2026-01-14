@@ -1,4 +1,4 @@
-# 🧠 01 - Javascript Basics
+# 🧠 04 - Javascript Basics
 
 <!-- TODO: Update this -->
 > TLDR; Learn JavaScript — the part that actually makes your website do stuff instead of just posing like a static brochure.
@@ -79,7 +79,7 @@ Before we begin:
 4. **Navigate to the lesson folder**
     <!-- TODO: Change this according to your lesson folder -->
     ```bash
-    cd curriculum/[lesson-phase]/[lesson-name]
+    cd curriculum/phase2-javascript/04-js-basics
     ```
 
 4. **Install dependencies (if any)**
@@ -94,7 +94,7 @@ Before we begin:
    npm run dev
    ```
 
-## 📄 Code Walkthrough
+## 📄 Code Walkthrough and 🔍 Explanation
 
 ### A. Printing
 
@@ -201,6 +201,27 @@ console.log(typeof(numbers), typeof(person));
 
 
 You can use `typeof` to check what kind of data something is.
+
+Before going to the conditionals, let's discuss about arithmetic operations
+
+| Operator | Meaning             | Example           | Result |
+| -------- | ------------------- | ----------------- | ------ |
+| `+`      | Addition            | `4 + 2`           | `6`    |
+| `-`      | Subtraction         | `4 - 2`           | `2`    |
+| `*`      | Multiplication      | `4 * 2`           | `8`    |
+| `/`      | Division            | `4 / 2`           | `2`    |
+| `%`      | Modulus (remainder) | `5 % 2`           | `1`    |
+| `++`     | Increment           | `let a = 10; a++` | `11`   |
+| `--`     | Decrement           | `let a = 10; a--` | `9`    |
+
+Then, string concatenation:
+String concatenation means joining strings together. In JavaScript, this is commonly done using the + operator.
+```js
+let firstName = "Alex";
+let result = "Hello " + firstName;
+console.log(result); // result = Hello Alex
+```
+
 ### E. Conditionals
 
 * Conditionals let your code make decisions.
@@ -552,7 +573,7 @@ console.log(average([100, 200, 300]));       // 200
 
 Now it’s reusable, and you can call it anytime you need it — like your personal calculator bot.
 
-### ➡️ Quick Practice: Write a function that checks every number in the array whether it is even or odd. Then, check the data type.
+### 🧪 Quick Practice: Write a function that checks every number in the array whether it is even or odd. Then, check the data type.
 #### 1. In `script.js`, initialise array `numbers`
 ```js
 let numbers = [1, 4, 7, 10, 23, 88, 1001];
@@ -581,7 +602,7 @@ for (let i = 0; i < numbers.length; i++){
 }
 ```
 
-## Mini Project A - Mini Library
+## 🧪 Mini Project A - Mini Library
 
 Before starting, remove the code in `script.js`.
 ### Let's try to craft the product first!
@@ -698,6 +719,186 @@ function searchBook(row, column){
 console.log(searchBook(4, 3));
 ```
 Could you enhance this code modularity? Or perhaps its library capabilities, like storing the age of the book, or its author? 
+
+## 🧪 Mini Project B - Student Grade Manager
+
+Open a file called `gradeManager.js`. Your task is to modify the code so that each function works correctly!
+Make sure you change `script` source to see the javascript code working.
+
+| Time  | Task                                                     | Concepts Used                      |
+| ----- | -------------------------------------------------------- | ---------------------------------- |
+| 3 min | Create a student object with name, age, grades array     | Objects, Arrays                    |
+| 3 min | Write a function to calculate average grade              | Functions, Loops, Arrays           |
+| 3 min | Write a function to get letter grade (A / B / C / D / F) | If / Else, Comparison              |
+| 3 min | Write a function to check if student passed              | Functions, Logical, Truthy / Falsy |
+| 3 min | Write a function to find highest grade                   | While Loop, Comparison             |
+| 5 min | Create array of 3 students, loop through all             | Array of Objects, For Loop         |
+| 5 min | Display summary for each student                         | All concepts together              |
+
+```js
+// ========== TASK 1: Create a student object ==========
+// Properties: name (string), age (number), grades (array of numbers)
+let student = {
+  // your code here
+};
+
+
+// ========== TASK 2: Calculate average grade ==========
+// Loop through grades array and return the average
+function getAverage(grades) {
+  // your code here
+}
+
+
+// ========== TASK 3: Get letter grade ==========
+// 90+ = "A", 80+ = "B", 70+ = "C", 60+ = "D", below = "F"
+function getLetterGrade(average) {
+  // your code here (use if/else)
+}
+
+
+// ========== TASK 4: Check if passed ==========
+// Return true if average >= 60 AND no grade below 50
+function hasPassed(grades) {
+  // your code here (use logical operators)
+}
+
+
+// ========== TASK 5: Find highest grade ==========
+// Use a while loop to find the highest grade
+function getHighest(grades) {
+  // your code here
+}
+
+
+// ========== TASK 6: Create 3 students ==========
+var students = [
+  // add 3 student objects here
+];
+
+
+// ========== TASK 7: Display all results ==========
+// Loop through students and console.log a summary for each
+for (let i = 0; i < students.length; i++) {
+  // your code here
+}
+
+// ========= a random function =============
+function mathOperation() {
+    function findMin() {
+        // your code goes here
+    }
+}
+```
+
+Expected Output:
+```js
+--- Alice ---
+Average: 87
+Letter Grade: B
+Passed: true
+Highest: 95
+
+--- Bob ---
+Average: 72
+Letter Grade: C
+Passed: true
+Highest: 85
+
+--- Charlie ---
+Average: 58
+Letter Grade: F
+Passed: false
+Highest: 70
+```
+
+### Answer Code
+
+```js
+// TASK 1
+let student = {
+  name: "Alice",
+  age: 16,
+  grades: [85, 90, 78, 95]
+};
+
+// TASK 2
+function getAverage(grades) {
+  let sum = 0;
+  for (let grade of grades) {
+    sum += grade;
+  }
+  return sum / grades.length;
+}
+
+// TASK 3
+function getLetterGrade(average) {
+  if (average >= 90) {
+    return "A";
+  } else if (average >= 80) {
+    return "B";
+  } else if (average >= 70) {
+    return "C";
+  } else if (average >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+// TASK 4
+function hasPassed(grades) {
+  let avg = getAverage(grades);
+  let allAbove50 = true;
+  
+  for (let grade of grades) {
+    if (grade < 50) {
+      allAbove50 = false;
+    }
+  }
+  
+  return avg >= 60 && allAbove50;
+}
+
+// TASK 5
+function getHighest(grades) {
+  let highest = grades[0];
+  let i = 1;
+  
+  while (i < grades.length) {
+    if (grades[i] > highest) {
+      highest = grades[i];
+    }
+    i++;
+  }
+  
+  return highest;
+}
+
+// TASK 6
+var students = [
+  { name: "Alice", age: 16, grades: [85, 90, 78, 95] },
+  { name: "Bob", age: 17, grades: [70, 65, 85, 68] },
+  { name: "Charlie", age: 16, grades: [55, 60, 70, 48] }
+];
+
+// TASK 7
+for (let i = 0; i < students.length; i++) {
+  let avg = getAverage(student.grades);
+  
+  console.log("--- " + student.name + " ---");
+  console.log("Average: " + Math.round(avg));
+  console.log("Letter Grade: " + getLetterGrade(avg));
+  console.log("Passed: " + hasPassed(student.grades));
+  console.log("Highest: " + getHighest(student.grades));
+  console.log("");
+}
+```
+
+Possible extension idea for extra points: (please approach your mentor when you are done)
+1. Apparently, there has been a mistake on Alice's marks, "78" is supposed to be "67". How would you approach this problem?
+2. Do you think the variable declaration keywords are good enough. Anything to change? Explain your answer!
+3. Implement findMin() and add the minimum score as one of the data returned. Do note that it has variable scope problem, resolve it first! And explain your solution!
 
 ## Document Object Model Manipulation
 
@@ -823,7 +1024,7 @@ document.body.addEventListener("click", function(e) {
 | CSS-style query (all)   | `querySelectorAll("selector")`       | NodeList       | Loop through all matching elements   |
 | React to user actions   | `addEventListener("event", handler)` | —              | Make your page interactive           |
 
-### ➡️ Quick Practice: Change text color when a button is clicked.
+### 🧪 Quick Practice: Change text color when a button is clicked.
 #### 1. Move the code from `script.js` to `libraries.js`
 #### 2. In `index.html`, attach an ID to heading 1 and the button
 ```html
@@ -867,7 +1068,7 @@ button.addEventListener("click", function() {
     }
 });
 ```
-## Mini Project B - To-do List
+## 🧪 Mini Project B - To-do List
 ### Here is the starter code:
 ```html
 <!DOCTYPE html>
@@ -1125,6 +1326,7 @@ git push origin main
 ## 📝 Bonus Resources
 
 <!-- TODO: Edit or change this, can add youtube link if applicable -->
+* [MDN Docs](https://developer.mozilla.org/)
 * [W3Schools - Javascript Tutorial](https://www.w3schools.com/js)
 
 
@@ -1132,27 +1334,4 @@ git push origin main
 <!-- TODO: Update this, add your name, edit the role and github username and links -->
 | Name         | Role                | GitHub                                             |
 | ------------ | ------------------- | -------------------------------------------------- |
-| Reynaldi     | Speaker 1 | [@yourgithub](https://github.com/yourgithub)       |
-| Michelle     | Speaker 2 | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Activity Creator 1         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Activity Creator 2         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Reviewer 1         | [@yourgithub](https://github.com/yourgithub)       |
-| Your Name | Reviewer 2         | [@yourgithub](https://github.com/yourgithub)       |
-
-<!-- TODO: Delete this section when you are done-->
-## 📌 Heading Format Guide (for consistency)
-
-Use these emoji-based headers for every section:
-
-```md
-## 🧠 Title – For lesson title
-## 📚 Title – For table of contents
-## 🔍 Title – For explanation
-## 📦 Title – For tools or dependencies and setup
-
-## 📄 Title – For code breakdown
-## 🧪 Title – For exercises
-## 📝 Title – For documentation-related things
-
-## 🙌 Title – For contributors
-```
+| Reynaldi     | Speaker   | [@reynaldi-goh](https://github.com/reynaldi-goh)       |
