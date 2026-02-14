@@ -1,0 +1,115 @@
+/* ===== CSS BASICS EXERCISE ===== */        
+
+        *{
+            box-sizing:border-box;
+            margin: 0;
+            padding: 0;
+        }
+  
+/* PAGE STYLES */
+        .page {
+            /* 2. BOX MODEL - Content area styling */
+            background-color: #6366f1;
+            padding: 20px;  /* Space inside the element */
+            margin: 0;      /* Space outside the element */
+        }
+
+/* PROFILE STYLES */
+        .profile-section {
+            /* 3. BASIC STYLING - Colors and fonts */
+            color: white;
+            font-family: Arial, sans-serif;
+            
+            /* 2. BOX MODEL - Spacing */
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+/* PROFILE PICTURE STYLES */
+        .profile-picture {
+            /* 2. BOX MODEL - Border */
+            width: 120px;
+            height: 120px;
+            border: 3px solid white;  /* Border around the image */
+            border-radius: 60px;      /* Makes it circular */
+            /* 4. POSITIONING - Display */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+/* PROFILE TITLE STYLES */
+        .profile-title {
+            /* 3. BASIC STYLING - Font properties */
+            font-size: 28px;
+            font-weight: bold;
+            
+            /* 2. BOX MODEL - Margins */
+            margin-top: 15px;
+            margin-bottom: 5px;
+            
+            /* 4. POSITIONING - Text alignment */
+            text-align: center;
+        }
+
+/* PROFILE DESCRIPTION STYLES */
+        .profile-description {
+            /* 3. BASIC STYLING */
+            font-size: 16px;
+            
+            /* 4. POSITIONING - Text alignment */
+            text-align: center;
+        }
+
+/* LINKS SECTION STYLES */
+        .links-section {
+            /* 2. BOX MODEL - Padding for spacing */
+            padding: 0 20px;
+
+            /* Centering the Container */
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+/* LINKS ITEM STYLES */
+        .link-item {
+            /* 3. BASIC STYLING - Colors */
+            background-color: white;
+            color: #333333;
+            
+            /* 2. BOX MODEL - All sides at once */
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #dddddd;
+            border-radius: 8px;
+            
+            /* 4. POSITIONING - Display type */
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            
+            /* 3. BASIC STYLING - Font */
+            font-size: 16px;
+        } 
+
+/* FOOTER SECTION STYLES */
+        .footer-section {
+            /* 3. BASIC STYLING */
+            color: white;
+            font-size: 14px;
+            text-align: center;
+
+            /* 2. BOX MODEL */
+            margin-top: 40px;
+            margin-left:auto;
+            padding: 20px;
+        }
+        
+/* (OPTIONAL) PSEUDO-CLASSES - Hover effect for links */
+        .link-item:hover {
+            background-color: #f3f4f6;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
